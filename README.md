@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Julio Web Designer</title>
+
+<style>
+/* Fundo animado roxo premium */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a0026, #4b0082, #7b00ff);
+  background-size: 200% 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: backgroundMove 8s infinite alternate;
+}
+
+@keyframes backgroundMove {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+/* Card principal */
+.card {
+  background: rgba(20, 0, 40, 0.9);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 0 40px #a100ff;
+  color: white;
+  width: 340px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Foto do Julio */
+.card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #a100ff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px #a100ff;
+  object-fit: cover;
+}
+
+/* Nome e descrição */
+.card h1 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+/* Avaliações */
+.reviews {
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+/* Botão WhatsApp */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(45deg, #a100ff, #d000ff);
+  padding: 14px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 20px #d000ff;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 35px #ffffff;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+  <!-- Foto -->
+  <img src="julio.png" alt="Julio">
+
+  <!-- Nome e descrição -->
+  <h1>Julio Web Designer</h1>
+  <p>Transformando suas ideias em realidade</p>
+
+  <!-- Avaliações -->
+  <div class="reviews">
+    ⭐⭐⭐⭐⭐ 5.0 (27 Avaliações)
+  </div>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5543996479254" target="_blank" class="btn">
+    Fale comigo no WhatsApp
+  </a>
+</div>
+
+</body>
+</html>
